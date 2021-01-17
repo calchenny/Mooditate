@@ -47,3 +47,7 @@ function meSad() {
 function meMad() {
   alert("You are mad today.");
 }
+
+function userResponse(){
+  alert("Your response has been submitted.");
+}

@@ -27,19 +27,28 @@
       <div class="center d-flex justify-content-center align-items-center CDdiv">
           <p id="CDtime"></p>
         </div>
-
+      <audio autoplay="true">
+        <source src="ocean.wav" type="audio/ogg">
+      </audio>
 
       </div>
       <div class="justify-content-center align-items-center sessionOpts">
-        <a href="end.html"><button type="radio" class="btn btn-primary" type="submit">End Session</button></a>
-        <a href="meditate.html"><button type="radio" class="btn btn-primary" type="submit">Edit Session</button></a>
+        <a href="end.html"><button style="background-color: #55839D;" type="radio" class="btn btn-primary">End Session</button></a>
+        <a href="meditate.html"><button style="background-color: #55839D;" type="radio" class="btn btn-primary">Edit Session</button></a>
       </div>
 
     <script>
       var soundtrack = localStorage.getItem('backgroundSounds');
-      document.getElementById('testsound').innerHTML = soundtrack;
-
-
+      // document.getElementById('testsound').innerHTML = soundtrack;
+        var sound;
+        if (soundtrack == 1){
+            sound = "rain.wav";
+        } else if (soundtrack == 2){
+            sound = "ocean.wav";
+        } else if (soundtrack == 3){
+            sound = "nature.wav";
+        } else sound = "";
+      document.getElementById('testsound').innerHTML = sound;
 
       var CD = localStorage.getItem('startingCD');
       let time = CD * 60;

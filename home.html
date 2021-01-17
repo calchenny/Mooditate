@@ -30,10 +30,10 @@
     <script src="main.js"></script>
     <div class ="container-fluid">
     <div class="row title-row justify-content-between">
-      <div class="col-4">
+      <div class="col-6">
         <div id="mySidenav" class="sidenav float-left">
           <a href="#" pxhref="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <div></div>>
+          <div></div>
           <a style="padding: 40px 8px 8px 90px" href="home.html">Home</a>
           <a style="padding: 40px 8px 8px 90px" href="meditate.html">Meditate</a>
           <a style="padding: 40px 8px 8px 90px" href="profile.html">Profile</a>
@@ -43,18 +43,10 @@
   
       </div>
 
-      <script>
-
-      </script>
-
-
-      <div class="col-1">
+      <div class="col-1 justify-content-end">
         <div id="content"></div>
         <a href="index.html">
-          <p class="loginbutton">Login</p>
-        </a>
-        <a href="index.html">
-          <p class="loginbutton" onclick="signOut()">Sign out</p>
+          <button style="background-color: #55839D; margin-top: 15px;" type="button" class="btn btn-primary">Back to Login</button>
         </a>
         <script>
           function signOut() {
@@ -129,7 +121,7 @@
         </a>
       </div>
       <div class="col-3 justify-content-center">
-        <button style="background-color: #55839D;" type="button" class="btn btn-primary">Submit</button>
+        <a href="home.html"><button onclick="userResponse()" style="background-color: #55839D;" type="button" class="btn btn-primary">Submit</button></a>
       </div>
     </div>
   </div>

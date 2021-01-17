@@ -7,24 +7,14 @@ function timeSelected(num){
 
 function soundSelected(){
     var num = document.getElementById("sounds").value;
-    localStorage.removeSound("backgroundSounds");
-    localStorage.setItem("backgroundSounds", num);
-    document.getElementById("demo").innerHTML = localStorage.ge;
-
+    setSound(num);
 }
 
 function setSound(num){
-    const n = num;
-    var sound;
-    if (num == 1){
-        sound = "rain.wav";
-    } else if (num == 2){
-        sound = "ocean.wav";
-    } else if (num == 3){
-        sound = "nature.wav";
-    } else sound = "";
-
-    document.getElementById("demo2").innerHTML = num;
+    localStorage.removeItem("backgroundSounds");
+    localStorage.setItem("backgroundSounds", num);
+    var testvar = localStorage.getItem("backgroundSounds");
+    document.getElementById("demo").innerHTML = testvar;
 }
 
 function clicked(){
