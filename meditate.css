@@ -51,7 +51,11 @@
   }*/
 
   .startmed{
-      color: white;
+      border-color: white;
       border: 2px solid white;
       border-radius: 5px;
+  }
+
+  .startmed h4{
+      padding:5px;
   }
