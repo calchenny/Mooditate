@@ -21,6 +21,9 @@
       <!-- <div class="CDdiv">    
         <span class="align-middle"></span>
       </div> -->
+      <p id="testsound"></p>
+
+
       <div class="center d-flex justify-content-center align-items-center CDdiv">
           <p id="CDtime"></p>
         </div>
@@ -33,6 +36,11 @@
       </div>
 
     <script>
+      var soundtrack = localStorage.getItem('backgroundSounds');
+      document.getElementById('testsound').innerHTML = soundtrack;
+
+
+
       var CD = localStorage.getItem('startingCD');
       let time = CD * 60;
       const countdownEl = document.getElementById('CDtime');

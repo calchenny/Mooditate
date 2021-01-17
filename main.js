@@ -10,7 +10,7 @@ function closeNav() {
 
 function onSignIn(googleUser){
   console.log(googleUser.getBasicProfile())
-  
+
   var profile = googleUser.getBasicProfile()
   console.log('User is ' + JSON.stringify(profile))
 
@@ -26,4 +26,24 @@ function signOut(){
   gapi.auth2.getAuthInstance().signOut().then(function(){
     console.log('user signed out')
   })
+}
+
+function meExcited() {
+    alert("You are excited today!");
+}
+
+function meHappy() {
+  alert("You are happy today!");
+}
+
+function meNeutral() {
+  alert("You are feeling okay today.");
+}
+
+function meSad() {
+  alert("You are sad today.");
+}
+
+function meMad() {
+  alert("You are mad today.");
 }
