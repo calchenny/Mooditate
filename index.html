@@ -74,27 +74,6 @@
   </a>
 </div>
 
-<script>
-  function onSignIn(googleUser){
-    console.log(googleUser.getBasicProfile())
-    var profile = googleUser.getBasicProfile()
-    console.log('User is ' + JSON.stringify(profile))
-
-    var element = document.querySelector('#content')
-    element.innerText = profile.getGivenName();
-
-    var image = document.createElement('img')
-    image.setAttribute('src', profile.getImageurl())
-    element.append(image)
-  }
-
-  function signOut(){
-    gapi.auth2.getAuthInstance().signOut().then(function(){
-      console.log('user signed out')
-    })
-  }
-
-</script>
 <div class="row justify-content-center">
   <a href="home.html">
     <button type="button" class="btn btn-light">Guest</button>
