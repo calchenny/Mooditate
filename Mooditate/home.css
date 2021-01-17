@@ -6,6 +6,7 @@ body {
     background-color: #b7d9f1;
   }
 
+
   .sidenav {
     height: 100%;
     width: 0;
@@ -67,10 +68,10 @@ body {
     border: none;
     color: #fff;
     background-color: #22acea;
-    width: 250px;
-    height:50px;
+    width: 150px;
+    height:40px;
     border-radius:25px;
-    font-size: 1.3em;
+    font-size: 1em;
     font-family: dm-sans, sans-serif;
     font-weight: 700;
     background-image: none;
@@ -87,13 +88,18 @@ body {
     border: none;
     color: #fff;
     background-color: #22acea;
-    width: 250px;
-    height:50px;
+    width: 150px;
+    height:40px;
     border-radius:25px;
-    font-size: 1.3em;
+    font-size: 1em;
     font-family: dm-sans, sans-serif;
     font-weight: 700;
     background-image: none;
+}
+
+.login-info {
+    margin: auto;
+    width: 50%;
 }
 
   @media screen and (max-height: 450px) {
