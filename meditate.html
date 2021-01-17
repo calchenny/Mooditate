@@ -48,25 +48,23 @@
                 <img src="logo.png" class="logo center" alt="Responsive image">
             </div>
         </div>
-
-        
         <div class="container">
-            <div class="row">
+            <div class="row" style="10pxs">
                 <div class="col-md-12 startmed" >
                     <h4>Create a new meditating session</h3>
                 </div>
             </div>
-            <br>            
-            <br>
+            <br><br>
             <div class="row">
               <div class="col">
                 <h4>Select your preferences</h4>
               </div>
             </div>  
+
             <div class="row">
               <div class="preferences">
-                <button type="radio" class="btn btn-primary" id="1M" type="submit" onclick="timeSelected(1)">Guided Meditated</button>
-                <div class="custom-select" style="width:200px;">
+                <button type="radio" class="btn btn-primary" id="1M" type="submit" onclick="timeSelected(1)">Guided Meditation</button>
+                <div class="soundOptions" style="width:200px;">
                   <select>
                     <option value="0">Select Sound:</option>
                     <option value="1">Rain</option>
@@ -76,13 +74,13 @@
                     <option value="5">No Sound</option>
                   </select>
                 </div>
-
+                <div class="CDoptions">
                   <button type="radio" class="btn btn-primary" id="1M" type="submit" onclick="timeSelected(1)">1 Minute</button>
                   <button type="radio" class="btn btn-primary" id="3M" type="submit" onclick="timeSelected(3)">3 Minutes</button>
                   <button type="radio" class="btn btn-primary" id="5M" type="submit" onclick="timeSelected(5)">5 Minute</button>
                   <button type="radio" class="btn btn-primary" id="10M" type="submit" onclick="timeSelected(10)">10 Minute</button>
-              </div>
-
+                </div>
+                </div>
             </div>
 
             <div class="row">
@@ -90,12 +88,13 @@
             </div>
 
         </div>
-        <br>
-        <br>
+        <br><br>
 
         <div class="row">
             <button type="button" class="btn btn-info btn-lg" id="startCD" value="" onclick="clicked()">Begin Session</button>
         </div>
+    </div>
+
 <p id="demo"></p>
     </div>
     <br>    
