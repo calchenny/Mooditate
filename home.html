@@ -9,6 +9,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!--Google Sign in-->
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="606068570668-2i5tjp3cm7q26ra190sfkeb09k2tgs97.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+  <!--Website Icon-->
+  <link rel="shortcut icon" type="image/png" href="moo.png"/>
+
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -38,6 +46,17 @@
         <a href="index.html">
           <p class="loginbutton">Login</p>
         </a>
+        <a href="home.html">
+          <p class="loginbutton" onclick="signOut()">Sign out</p>
+        </a>
+        <script>
+          function signOut() {
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+              console.log('User signed out.');
+            });
+          }
+        </script>
       </div>
   </div>
     </div>
@@ -122,7 +141,6 @@
   </div>
 </div>
 </div>
-
 
 </body>
 
