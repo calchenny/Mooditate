@@ -1,4 +1,4 @@
-
+/*
 .sidenav {
     height: 100%;
     width: 0;
@@ -48,4 +48,10 @@
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+  }*/
+
+  .startmed{
+      color: white;
+      border: 2px solid white;
+      border-radius: 5px;
   }

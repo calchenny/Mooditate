@@ -18,7 +18,8 @@
 
 
 <body style="background-color: #b7d9f1; font-family: 'Montserrat', sans-serif">
-<div class ="container-fluid">
+  <script src="main.js"></script>
+  <div class ="container-fluid">
   <div class="row title-row justify-content-start" style="height: 250px;">
     <div class="col-4">
       <div id="mySidenav" class="sidenav float-left">
@@ -30,14 +31,7 @@
         <a style="padding: 40px 8px 8px 90px" href="calendar.html">Calendar</a>
       </div>
       <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
-      <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-      }
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }
-      </script>
+
     </div>
     
     <div class="col-6">
@@ -65,8 +59,8 @@
   <div class="col-lg-5 mb-4">
     <div class="bg-white p-4 rounded shadow-sm h-100" align="center">
       <button class="btn btn-success btn-circle m-1"><i class="fa fa-check"></i></button>
-      <button class="btn btn-primary btn-circle m-1"><i class="fa fa-cog"></i></button>
-      <button class="btn btn-info btn-circle m-1"><i class="fa fa-paper-plane"></i></button>
+      <button class="btn btn-warning btn-circle m-1"><i class="fa fa-cog"></i></button>
+      <button class="btn btn-danger btn-circle m-1"><i class="fa fa-paper-plane"></i></button>
       <button class="btn btn-warning btn-circle m-1"><i class="fa fa-tags"></i></button>
       <button class="btn btn-danger btn-circle m-1"><i class="fa fa-sliders"></i></button>
     </div>
@@ -78,13 +72,16 @@
     <div class="bg-white p-4 rounded shadow-sm h-100" align="center">
       <div class="btn-group btn-group-toggle" data-toggle="buttons">
         <label class="btn btn-secondary active">
-          <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+          <input type="radio" name="options" id="option1" autocomplete="off" checked> Excited
         </label>
         <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+          <input type="radio" name="options" id="option2" autocomplete="off"> Satisfied
         </label>
         <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> Radio
+          <input type="radio" name="options" id="option3" autocomplete="off"> Overjoyed
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="option3" autocomplete="off"> Overjoyed
         </label>
       </div>
     </div>
@@ -102,16 +99,17 @@
     <textarea class="form-control" aria-label="With textarea"></textarea>
   </div>
 </div>
-<br>
+<br><br>
 <div class="row justify-content-center">
-  <div class="col-1 justify-content-center" h-100">
-    <button type="button" class="btn btn-primary">Meditate</button>
+  <div class="col-3 justify-content-center" href="meditate.html">
+    <a href="meditate.html">
+      <button type="button" class="btn btn-primary">Meditate</button>
+    </a>
   </div>
-  <div class="col-1 justify-content-center">
+  <div class="col-3 justify-content-center">
     <button type="button" class="btn btn-primary">Submit</button>
   </div>
 </div>
-
 </body>
 
 </html> 
