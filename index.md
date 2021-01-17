@@ -1,2 +1,2 @@
-# calchenny.github.io
+# Mooditate
 Meditation Website/App
