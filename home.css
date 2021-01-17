@@ -3,7 +3,9 @@
 body {
     background-color: #b7d9f1;
     font-family: 'Montserrat', sans-serif;
+
 }
+
 
 .loginbutton{
   margin-top: 15px;
@@ -364,4 +366,8 @@ li:hover:nth-child(n+8):nth-child(-n+38), li:nth-child(29){
 
   .calendar{
 
+  }
+
+  a{
+    text-decoration: none;
   }

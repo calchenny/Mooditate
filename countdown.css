@@ -4,11 +4,27 @@
     border: 2px solid white;
     border-radius: 20px;
     background-color: white;
-    height: 400px;
+    height:250px;
     /* justify-content: center; */
 }
 
 .CDdiv p{
     justify-content: center;
     vertical-align: auto;
+    font-size: 175px;
+    letter-spacing: 10px;
+}
+
+.center{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sessionOpts{
+    position: fixed;
+    top: 90%;
+    left: 55%;
+    transform: translate(-90%, -55%);
 }
