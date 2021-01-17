@@ -19,8 +19,11 @@
 <body style="background-color: #b7d9f1; font-family: 'Montserrat', sans-serif;">
     <script src="main.js"></script>
     <!-- <script src="countdown.js"></script> -->
-
-    <p id="CDtime"></p>
+    <div class="row">
+      <div class="container">    
+        <p id="CDtime"></p>
+      </div>
+    </div>
     <script>
       var CD = localStorage.getItem('startingCD');
       let time = CD * 60;
