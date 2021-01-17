@@ -7,24 +7,27 @@ function timeSelected(num){
     document.getElementById("demo").innerHTML = countDownTime;
 }
 
-function updateCD(time, countdownEl) {
-    const minutes = Math.floor(time / 60);
-    let seconds = time % 60;
-    seconds = seconds < 10 ? '0' + seconds : seconds;
-    countdownEl.innerHTML = `${minutes}: ${seconds}`;
-    time--;
-}
+
 
 function clicked(){
     document.getElementById("startCD").value = countDownTime;
     var x = document.getElementById("startCD").getAttribute("value");
     document.getElementById("demo").innerHTML = "CD is " + x;
     window.location.href = "countdown.html";
-    let time = countDownTime * 60;
+    const startingTime = countDownTime;
+    let time = startingTime * 60;
     const countdownEl = document.getElementById('CDtime');
     setInterval(updateCD(time, countdownEl), 1000);
 }
 
+function updateCD(time, countdownEl) {
+    
+    const minutes = Math.floor(time / 60);
+    let seconds = time % 60;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+    countdownEl.innerHTML = `${minutes}: ${seconds}`;
+    time--;
+}
 // document.getElementById("startCD").value = countDownTime;
 
 // document.getElementById("demo").innerHTML = "CD time" + document.getElementById("demo").innerHTML = "CD time" + ;
