@@ -60,7 +60,7 @@
   </div>
 <div class="row justify-content-center">
   <a data-onsuccess="onSignIn" href="home.html">
-    <div align="center" class="g-signin2" data-onsuccess="onSignIn"></div>
+    <div align="center" class="my-signin2" data-onsuccess="onSignIn"></div>
     <div id="content"></div>
   </a>
 </div>
@@ -75,6 +75,18 @@
   function onSignIn(googleUser){
     console.log('User is ' + JSON.stringify(googleUser.getBasicProfile()))
     
+    function renderButton() {
+      gapi.signin2.render('my-signin2', {
+        'scope': 'profile email',
+        'width': 240,
+        'height': 50,
+        'longtitle': true,
+        'theme': 'dark',
+        'onsuccess': onSuccess,
+        'onfailure': onFailure
+      });
+    }
+
     document.querySelector('#content').innerText =
       googleUser.getBasicProfile().getGivenName();
   }

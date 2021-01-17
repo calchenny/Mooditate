@@ -1,4 +1,11 @@
-.row .container{
+.CDdiv{
+    border-color: white;
+    border: 2px solid white;
+    border-radius: 10px;
     background-color: white;
+    height: 200px;
+}
 
+div {
+    background-color: white;
 }
