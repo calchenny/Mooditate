@@ -67,6 +67,15 @@ body {
     display: none; 
     }
 
+  .quote{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-color: rgb(48, 146, 192);
+    border: 2px solid rgb(48, 146, 192);
+    border-radius: 10px;
+    background-color: rgb(48, 146, 192);
+  } 
+
   .border1{
     padding-top: 10px;
     padding-bottom: 10px;

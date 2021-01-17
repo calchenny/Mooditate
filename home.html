@@ -4,7 +4,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
   </style>
 <head>
-  <link rel="stylesheet" type="text/css" href="home.css"> 
+  <link rel="stylesheet" type="text/css" href="home.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,100 +18,101 @@
   <title>Home</title>
 </head>
 
-
-<body style="background-color: #b7d9f1; font-family: 'Montserrat', sans-serif">
-  <script src="main.js"></script>
-  <div class ="container-fluid">
-  <div class="row title-row justify-content-start" style="height: 250px;">
-    <div class="col-4">
-      <div id="mySidenav" class="sidenav float-left">
-        <a href="#" pxhref="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a>LOGO</a>
-        <a style="padding: 40px 8px 8px 90px" href="home.html">Home</a>
-        <a style="padding: 40px 8px 8px 90px" href="meditate.html">Meditate</a>
-        <a style="padding: 40px 8px 8px 90px" href="profile.html">Profile</a>
-        <a style="padding: 40px 8px 8px 90px" href="calendar.html">Calendar</a>
+<div id="main">
+  <body style="background-color: #b7d9f1; font-family: 'Montserrat', sans-serif;">
+    <script src="main.js"></script>
+    <div class ="container-fluid">
+    <div class="row title-row" style="height: 250px;">
+      <div class="col-4">
+        <div id="mySidenav" class="sidenav float-left">
+          <a href="#" pxhref="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a>LOGO</a>
+          <a style="padding: 40px 8px 8px 90px" href="home.html">Home</a>
+          <a style="padding: 40px 8px 8px 90px" href="meditate.html">Meditate</a>
+          <a style="padding: 40px 8px 8px 90px" href="profile.html">Profile</a>
+          <a style="padding: 40px 8px 8px 90px" href="calendar.html">Calendar</a>
+        </div>
+        <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  
       </div>
-      <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
-
+  
+      <div class="row">
+        <div class="col-12 mb-4">
+          <div class="d-flex justify-content-center">
+            <img src="logo.png" class="logo center" alt="Responsive image">
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 mt-5">
+        <div style="text-align: center" class="quote">
+          <h2>"Sea otters are cute but cows are better"</h2>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="align-middle">
+        <h3 align="center">How are you feeling?</h3>
+      </div>
+    </div>
+    <br>
+    <div class="row justify-content-center">
+      <div class="col-lg-12 mb-4">
+        <div class="border1" align="center">
+          <input class="excited" type="image" src="excited.png" />
+          <input class="happy" type="image" src="happy.png" />
+          <input class="neutral" type="image" src="neutral.png" />
+          <input class="sad" type="image" src="sad.png" />
+          <input class="mad" type="image" src="mad.png" />
+          <br><br>
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+              <input type="radio" name="options" id="option1" autocomplete="off"> Excited
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="option2" autocomplete="off"> Satisfied
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="option3" autocomplete="off"> Overjoyed
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="option3" autocomplete="off"> Happy
+            </label>
+          </div>
+        </div>
+      </div>
     </div>
     
-    <div class="col-6">
-      <img style="padding-left: 90px;" src="logo.png" class="logo justify-content-center" alt="Responsive image">
+    <div class="row">
+      <h3 align="center">What are you grateful for?</h3>
     </div>
-  </div>
-
-</div>
-
-<div class="row justify-content-center">
-  <div class="col-5">
-    <div style="text-align: center" class="bg-info p-4 rounded shadow-sm h-100">
-      <h2>Sea otters are cute but cows are better</h2>
+    <br>
+    <div class="row justify-content-center">
+      <div class="col-5 justify-content-center">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-<br>
-<div class="row">
-  <div class="align-middle">
-    <h3 align="center">How are you feeling?</h3>
-  </div>
-</div>
-<br>
-<div class="row justify-content-center">
-  <div class="col-lg-5 mb-4">
-    <div class="border1" align="center">
-      <input class="excited" type="image" src="excited.png" />
-      <input class="happy" type="image" src="happy.png" />
-      <input class="neutral" type="image" src="neutral.png" />
-      <input class="sad" type="image" src="sad.png" />
-      <input class="mad" type="image" src="mad.png" />
-    </div>
-  </div>
-</div>
-<div class="col-sm-"></div>
-<div class="row justify-content-center">
-  <div class="col-lg-5 mb-4">
-    <div class="border2" align="center">
-      <div class="btn-group btn-group-toggle" data-toggle="buttons">
-        <label class="btn btn-secondary active">
-          <input type="radio" name="options" id="option1" autocomplete="off"> Excited
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option2" autocomplete="off"> Satisfied
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> Overjoyed
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off"> Happy
-        </label>
+    <br>
+    <div class="row justify-content-center">
+      <div class="col-3 justify-content-center" href="meditate.html">
+        <a href="meditate.html">
+          <button type="button" class="btn btn-primary">Meditate</button>
+        </a>
+      </div>
+      <div class="col-3 justify-content-center">
+        <button type="button" class="btn btn-primary">Submit</button>
       </div>
     </div>
   </div>
 </div>
+</div>
 
-<div class="row">
-  <h3 align="center">What are you grateful for?</h3>
-</div>
-<br>
-<div class="row justify-content-center">
-  <div class="col-5 justify-content-center">
-    <div class="input-group mb-3">
-      <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-    </div>
-  </div>
-</div>
-<br><br>
-<div class="row justify-content-center">
-  <div class="col-3 justify-content-center" href="meditate.html">
-    <a href="meditate.html">
-      <button type="button" class="btn btn-primary">Meditate</button>
-    </a>
-  </div>
-  <div class="col-3 justify-content-center">
-    <button type="button" class="btn btn-primary">Submit</button>
-  </div>
-</div>
+
 </body>
 
-</html> 
+</html>
