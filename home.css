@@ -5,6 +5,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.loginbutton{
+  margin-top: 15px;
+}
+
   .title-row{
     padding-top: 10px;
     height: 100px;
