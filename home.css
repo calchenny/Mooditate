@@ -5,6 +5,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.loginbutton{
+  margin-top: 15px;
+}
+
   .title-row{
     padding-top: 10px;
     height: 100px;
@@ -63,42 +67,95 @@ body {
     top: -1px;
   }
 
+  [type='radio'] {
+    display: none; 
+    }
+
+  .quote{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-color: rgb(48, 146, 192);
+    border: 2px solid rgb(48, 146, 192);
+    border-radius: 10px;
+    background-color: rgb(48, 146, 192);
+  } 
+
+  .border1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  .border2{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: white;
+  }
+
 .button:hover {background-color: #357237}
 
 .excited{
   padding-top: 5px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
   height: 67px;
 }
 
+.excited:hover {
+  background-color: #dce4dc80
+}
+
+
 .happy{
   padding-bottom: 2px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
   height: 65px;
+}
+
+.happy:hover {
+  background-color: #dce4dc80
 }
 
 .neutral{
   padding-top: 4px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
   height: 68px;
+}
+
+.neutral:hover {
+  background-color: #dce4dc80
 }
 
 .sad{
   padding-top: 5px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
   height: 65px;
+}
+
+.sad:hover {
+  background-color: #dce4dc80
 }
 
 .mad{
   padding-top: 5px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
   height: 67px;
 }
+
+.mad:hover {
+  background-color: #dce4dc80
+}
+
 /*login page*/
   button[type=button] {
     text-align: center;

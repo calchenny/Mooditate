@@ -11,11 +11,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
   <title>Meditate</title>
 </head>
 
 <body style="background-color: #b7d9f1; font-family: 'Montserrat', sans-serif;">
-    <script src="main.js"></script>
+  <script src="main.js"></script>
+  <script src="meditate.js"></script>
+
 
   <div class ="container-fluid">
       <div class="row title-row">
@@ -29,7 +36,9 @@
             <a style="padding: 40px 8px 8px 90px" href="calendar.html">Calendar</a>
           </div>
           <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
-        </div></div></div>
+        </div>
+      </div>
+  </div>
           
     <div id="main">
         <div class="row">
@@ -51,7 +60,7 @@
               <div class="col">
                 <h4>Select your preferences</h4>
               </div>
-            </div>
+            </div>  
             <div class="row">
               <div class="preferences">
                 <button>Guided Meditation</button>
@@ -65,10 +74,27 @@
                     <option value="5">No Sound</option>
                   </select>
                 </div>
+                  <button type="radio" class="btn btn-primary" id="1M" type="submit" onclick="timeSelected(1)">1 Minute</button>
+                  <button type="radio" class="btn btn-primary" id="3M" type="submit" onclick="timeSelected(3)">3 Minutes</button>
+                  <button type="radio" class="btn btn-primary" id="5M" type="submit" onclick="timeSelected(5)">5 Minute</button>
+                  <button type="radio" class="btn btn-primary" id="10M" type="submit" onclick="timeSelected(10)">10 Minute</button>
               </div>
+                <p id="demo"></p>
             </div>
+
+            <div class="row">
+
+            </div>
+
         </div>
-    </div>
+        <br>
+        <br>
+
+        <div class="row">
+          
+            <button type="button" class="btn btn-info btn-lg" id="startCD" value="" onclick="clicked()">Meditate</button>
+            <!-- <a href="countdown.html"></a> -->
+        </div>
 
     </div>
     <br>    
