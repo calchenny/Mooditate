@@ -146,6 +146,15 @@ body {
     width: 50%;
 }
 
+.end-pic {
+    text-align: center;
+}
+
+.end-pic img {
+    width: 35%;
+
+}
+
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
