@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    background-color: #b7d9f1;
+    font-family: 'Montserrat', sans-serif;
+}
 
   .title-row{
     padding-top: 10px;
@@ -81,7 +87,7 @@
     font-family: dm-sans, sans-serif;
     font-weight: 700;
     background-image: none;
-    
+
 }
 
 #button {
