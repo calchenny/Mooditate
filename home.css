@@ -59,8 +59,39 @@
 
 .button:hover {background-color: #357237}
 
-.mood{
+.excited{
+  padding-top: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  height: 67px;
+}
+
+.happy{
+  padding-bottom: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
   height: 65px;
+}
+
+.neutral{
+  padding-top: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  height: 68px;
+}
+
+.sad{
+  padding-top: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  height: 65px;
+}
+
+.mad{
+  padding-top: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  height: 67px;
 }
 /*login page*/
   button[type=button] {
