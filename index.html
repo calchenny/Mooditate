@@ -64,11 +64,14 @@
     <br>
     <a href="home.html">
       <button type="button" class="btn btn-light">Hello&nbsp;<div id="content"></div></button>
-      <div id="content"></div>
-      <button onclick="signOut()">Sign out</button>
     </a>
   </a>
 </div>
+
+<div class="row justify-content-center">
+  <button type="button class="btn btn-light" onclick="signOut()">Sign out</button>
+</div>
+
 <script>
   function onSignIn(googleUser) {
     // get user profile information
