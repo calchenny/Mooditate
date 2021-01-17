@@ -40,16 +40,6 @@
         </div>
     </div>
       </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="d-flex justify-content-center">
-              <img src="logo.png" class="logo center" alt="Responsive image">
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 <script>
@@ -61,11 +51,26 @@
     $("li").css("height", height);
 </script>
 
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-8 justify-content-center">
-      <div class ="calendar" id="main">
+<div class="row1">
+    <div class="column1">
+        <div class="calendar">
+            <img src="logo.png" alt= "image">
+        </div>
+    </div>
+
+        <div class="column1">
+            <div id="description">
+              <br>
+              <p><b>Today, I was feeling: </b> happy and content</p>
+
+              <p><b>I am grateful for: </b>my friends and family</p>
+              <br>
+            </div>
+        </div>
+</div>
+
         <div id='fullDiv' >
+          <center><h1><b>January</b></h1></center>
           <ul>
             <li>SUN</li>
             <li>MON</li>
@@ -113,21 +118,10 @@
             <li>31</li>
           </ul>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 
-  <div class="description">
-    <br>
-    <p><b>Today, I was feeling: </b> happy and content</p>
-
-    <p><b>I am grateful for: </b>my friends and family</p>
-    <br>
-  </div>
-
-
+<br>
+<br>
     <script>
         function popup() {
             var x = document.getElementById("description");
