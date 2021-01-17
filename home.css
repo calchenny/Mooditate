@@ -3,7 +3,7 @@
 body {
     background-color: #b7d9f1;
     font-family: 'Montserrat', sans-serif;
-    
+
 }
 
 .loginbutton{
@@ -274,6 +274,87 @@ li:hover:nth-child(n+8):nth-child(-n+38), li:nth-child(29){
     color: #ffffff;
     margin-bottom:30px;
     margin-left: 15px;
+}
+
+/*profile page*/
+
+.column {
+    float:left;
+    width: 50%;
+}
+
+.row:after {
+    content:"";
+    display: table;
+    clear:both;
+}
+
+.account {
+    margin-left: 10vw;
+}
+
+.account h3{
+    color: #55839D;
+}
+
+.hours {
+    background-color: #55839D;
+    border-radius: 10px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.hours h1 {
+    text-align: center;
+    color: WHITE;
+}
+
+.hours h2{
+    color: WHITE;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.graph {
+    background-color: #55839D;
+    border-radius: 10px;
+    margin-right: 10vw;
+}
+
+.graph h2{
+    color: WHITE;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.graph img{
+    width: 70%;
+    margin-bottom: 2vw;
+    margin-left: 3vw;
+}
+
+
+.awards {
+    background-color: #55839D;
+    border-radius: 10px;
+    margin-top: 8vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+
+.awards h2{
+    color: WHITE;
+    margin-left: 5vw;
+    margin-right: 5vw;
+
+}
+
+.awards img {
+    width: 10%;
+    margin-left: 5vw;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
 }
 
   @media screen and (max-height: 450px) {
