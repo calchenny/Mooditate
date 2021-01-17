@@ -14,16 +14,17 @@ function clicked(){
     window.location.href = "countdown.html";
     const startingTime = countDownTime;
     let time = startingTime * 60;
-    const countdownEl = document.getElementById('CDtime');
-    setInterval(updateCD(time, countdownEl), 1000);
+    document.getElementById('CDtime').innerHTML = "hello";
+    // const countdownEl = document.getElementById('CDtime');
+    // setInterval(updateCD(time, countdownEl), 1000);
 }
 
 function updateCD(t, cd) {
-    const minutes = Math.floor(time / 60);
+    const minutes = Math.floor(t / 60);
     let seconds = t % 60;
     seconds = seconds < 10 ? '0' + seconds : seconds;
     cd.innerHTML = `${minutes}: ${seconds}`;
-    time--;
+    t--;
 }
 
 // document.getElementById("startCD").value = countDownTime;
