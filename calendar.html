@@ -88,7 +88,7 @@
         <li>14</li>
         <li>15</li>
         <li>16</li>
-        <li>17</li>
+        <li onclick="popup()">17</li>
         <li>18</li>
         <li>19</li>
         <li>20</li>
@@ -107,12 +107,23 @@
     </div>
     <br>
 
-    <div class="description">
+    <div id="description">
         <br>
         <p><b>Today, I was feeling: </b> happy and content</p>
 
         <p><b>I am grateful for: </b>my friends and family</p>
         <br>
     </div>
+
+    <script>
+        function popup() {
+            var x = document.getElementById("description");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 
   </body>

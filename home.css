@@ -68,7 +68,7 @@ body {
   }
 
   [type='radio'] {
-    display: none; 
+    display: none;
     }
 
   .quote{
@@ -78,7 +78,7 @@ body {
     border: 2px solid rgb(48, 146, 192);
     border-radius: 10px;
     background-color: rgb(48, 146, 192);
-  } 
+  }
 
   .border1{
     padding-top: 10px;
@@ -263,14 +263,14 @@ li:hover:nth-child(n+8):nth-child(-n+38), li:nth-child(29){
   color: #ecf0f1;
 }
 
-.description {
+#description {
     margin: 320px;
     background-color: #55839D;
     border-radius: 10px;
-
+    display:none;
 }
 
-.description p {
+#description p {
     color: #ffffff;
     margin-bottom:30px;
     margin-left: 15px;
