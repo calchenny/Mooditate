@@ -64,6 +64,8 @@
     <br>
     <a href="home.html">
       <button type="button" class="btn btn-light">Hello&nbsp;<div id="content"></div></button>
+      <div id="content"></div>
+      <button onclick="signOut()">Sign out</button>
     </a>
   </a>
 </div>
@@ -80,11 +82,17 @@
     console.log('User is ' + JSON.stringify(profile))
 
     var element = document.querySelector('#content')
-      element.innerText = profile.getGivenName();
+    element.innerText = profile.getGivenName();
 
-      var image = document.createElement('img')
-        image.setAttribute('src', profile.getImageurl()))
-        element.append(image)
+    var image = document.createElement('img')
+    image.setAttribute('src', profile.getImageurl())
+    element.append(image)
+  }
+
+  function signOut(){
+    gapi.auth2.getAuthInstance().signOut().then(function(){
+      console.log('user signed out')
+    }
   }
 
 </script>

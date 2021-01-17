@@ -1,8 +1,7 @@
 // gets the time selected by the user
 var countDownTime = 0;
 function timeSelected(num){
-    countDownTime = num;
-    document.getElementById("demo").innerHTML = num;
+    //document.getElementById("demo").innerHTML = num;
     localStorage.removeItem("startingCD");
     localStorage.setItem("startingCD", num);
 }
@@ -12,11 +11,6 @@ function clicked(){
     // var x = document.getElementById("startCD").getAttribute("value");
     //localStorage.setItem(countDownTime, CDMin);
     window.location.href = "countdown.html";
-    // const startingTime = countDownTime;
-    // let time = startingTime * 60;
-    // document.getElementById('CDtime').innerHTML = "hello";
-    // const countdownEl = document.getElementById('CDtime');
-    // setInterval(updateCD(time, countdownEl), 1000);
 }
 
 // function updateCD(t, cd) {
