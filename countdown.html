@@ -18,6 +18,20 @@
 
 <body style="background-color: #b7d9f1; font-family: 'Montserrat', sans-serif;">
     <script src="main.js"></script>
+    <!-- <script src="countdown.js"></script> -->
+
     <p id="CDtime"></p>
-    <script src="countdown.js"></script>
+    <script>
+      var CD = localStorage.getItem('startingCD');
+      let time = CD * 60;
+      const countdownEl = document.getElementById('CDtime');
+      setInterval(updateCD, 1000);
+      function updateCD() {
+        const minutes = Math.floor(time / 60);
+        let seconds = time % 60;
+        seconds = seconds < 10 ? '0' + seconds : seconds;
+        countdownEl.innerHTML = `${minutes}: ${seconds}`;
+        time--;
+    }
+    </script>
 </body>

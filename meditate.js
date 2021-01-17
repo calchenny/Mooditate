@@ -1,11 +1,12 @@
 // gets the time selected by the user
-const countDownTime = 0;
+var countDownTime = 0;
 function timeSelected(num){
     countDownTime = num;
-    localStorage.setItem('CDMins', 'num');  
-    document.getElementById("demo").innerHTML = countDownTime;
-    const test = localStorage.getItem('CDMins');
-    document.getElementById('demo2').innerHTML = "test: " test;  
+    document.getElementById("demo").innerHTML = num;
+    localStorage.removeItem("startingCD");
+    localStorage.setItem("startingCD", num);
+    var test = localStorage.getItem('startingCD');
+    document.getElementById('demo1').innerHTML = "test: " + test;  
 }
 
 function clicked(){
