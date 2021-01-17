@@ -7,8 +7,6 @@ function timeSelected(num){
     document.getElementById("demo").innerHTML = countDownTime;
 }
 
-
-
 function clicked(){
     document.getElementById("startCD").value = countDownTime;
     var x = document.getElementById("startCD").getAttribute("value");
@@ -20,14 +18,14 @@ function clicked(){
     setInterval(updateCD(time, countdownEl), 1000);
 }
 
-function updateCD(time, countdownEl) {
-    
+function updateCD(t, cd) {
     const minutes = Math.floor(time / 60);
-    let seconds = time % 60;
+    let seconds = t % 60;
     seconds = seconds < 10 ? '0' + seconds : seconds;
-    countdownEl.innerHTML = `${minutes}: ${seconds}`;
+    cd.innerHTML = `${minutes}: ${seconds}`;
     time--;
 }
+
 // document.getElementById("startCD").value = countDownTime;
 
 // document.getElementById("demo").innerHTML = "CD time" + document.getElementById("demo").innerHTML = "CD time" + ;
