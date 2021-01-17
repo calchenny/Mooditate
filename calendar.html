@@ -36,7 +36,7 @@
             <a style="padding: 40px 8px 8px 90px" href="calendar.html">Calendar</a>
           </div>
           <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
-    
+
         </div>
     </div>
       </div>
@@ -74,7 +74,7 @@
             <li>THUR</li>
             <li>FRI</li>
             <li>SAT</li>
-  
+
             <li>27</li>
             <li>28</li>
             <li>29</li>
@@ -96,7 +96,7 @@
             <li>14</li>
             <li>15</li>
             <li>16</li>
-            <li>17</li>
+            <li onclick="popup()">17</li>
             <li>18</li>
             <li>19</li>
             <li>20</li>
@@ -113,27 +113,30 @@
             <li>31</li>
           </ul>
         </div>
-    </div>
-
+      </div>
     </div>
   </div>
 </div>
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-12 ">
-      <div class="description">
-        <br>
-        <p><b>Today, I was feeling: </b> happy and content</p>
-    
-        <p><b>I am grateful for: </b>my friends and family</p>
-        <br>
-    </div>
 
-    </div>
 
+  <div class="description">
+    <br>
+    <p><b>Today, I was feeling: </b> happy and content</p>
+
+    <p><b>I am grateful for: </b>my friends and family</p>
+    <br>
   </div>
-  
-</div>
 
+
+    <script>
+        function popup() {
+            var x = document.getElementById("description");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 
   </body>
