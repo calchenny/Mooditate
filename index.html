@@ -76,10 +76,15 @@
 
 <script>
   function onSignIn(googleUser){
-    console.log('User is ' + JSON.stringify(googleUser.getBasicProfile()))
+    var profile = googleUser.getBasicProfile()
+    console.log('User is ' + JSON.stringify(profile))
 
-    document.querySelector('#content').innerText =
-      googleUser.getBasicProfile().getGivenName();
+    var element = document.querySelector('#content')
+      element.innerText = profile.getGivenName();
+
+      var image = document.createElement('img')
+        image.setAttribute('src', profile.getImageurl()))
+        element.append(image)
   }
 
 </script>

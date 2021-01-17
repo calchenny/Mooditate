@@ -4,15 +4,15 @@
     border: 2px solid white;
     border-radius: 20px;
     background-color: white;
-    height:200px;
+    height:250px;
     /* justify-content: center; */
 }
 
 .CDdiv p{
     justify-content: center;
     vertical-align: auto;
-    font-size: 400px;
-    letter-spacing: 20px;
+    font-size: 200px;
+    letter-spacing: 10px;
 }
 
 .center{
