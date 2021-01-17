@@ -72,9 +72,15 @@
 
     </form>
 </div>
-
-<div class="g-signin2" data-onsuccess="onSignIn"></div>
-
+<div class="row justify-content-center">
+  <div class="g-signin2" data-onsuccess="onSignIn"></div>
+</div>
+<script>
+  function onSignIn(googleUser) {
+    // get user profile information
+    console.log(googleUser.getBasicProfile())
+  }
+</script>
 
     <br>
     <br>

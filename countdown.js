@@ -1,5 +1,5 @@
 
-var countDownTime = 0;
+var countDownTime = getElementById('startCD').getAttribute('value');
 
 function selectedTime(num){
     countDownTime = num;
