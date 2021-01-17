@@ -5,8 +5,6 @@ function timeSelected(num){
     document.getElementById("demo").innerHTML = num;
     localStorage.removeItem("startingCD");
     localStorage.setItem("startingCD", num);
-    var test = localStorage.getItem('startingCD');
-    document.getElementById('demo1').innerHTML = "test: " + test;  
 }
 
 function clicked(){
