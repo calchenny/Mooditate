@@ -11,6 +11,8 @@
 .CDdiv p{
     justify-content: center;
     vertical-align: auto;
+    font-size: 400px;
+    letter-spacing: 20px;
 }
 
 .center{
