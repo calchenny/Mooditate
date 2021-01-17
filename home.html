@@ -43,12 +43,15 @@
         <a href="index.html">
           <p class="loginbutton">Login</p>
         </a>
-        <button onclick="signOut()">Sign out</button>
+        <a href="home.html">
+          <p class="loginbutton" onclick="signOut()">Sign out</p>
+        </a>
         <script>
           function signOut() {
-            gapi.auth2.getAuthInstance().signOut().then(function() {
-               console.log('user signed out')
-           })
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+              console.log('User signed out.');
+            });
           }
         </script>
       </div>
