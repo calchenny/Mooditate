@@ -22,11 +22,15 @@
         <span class="align-middle"></span>
       </div> -->
       <div class="center d-flex justify-content-center align-items-center CDdiv">
-        <div>
           <p id="CDtime"></p>
         </div>
-      </div>
 
+
+      </div>
+      <div class="justify-content-center align-items-center sessionOpts">
+        <a href="end.html"><button type="radio" class="btn btn-primary" type="submit">End Session</button></a>
+        <a href="meditate.html"><button type="radio" class="btn btn-primary" type="submit">Edit Session</button></a>
+      </div>
 
     <script>
       var CD = localStorage.getItem('startingCD');
@@ -40,6 +44,9 @@
         seconds = seconds < 10 ? '0' + seconds : seconds;
         countdownEl.innerHTML = `${minutes}: ${seconds}`;
         time--;
+        if(time==0){
+          window.location.href = "end.html";
+        }
     }
     </script>
 </body>

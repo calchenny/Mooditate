@@ -11,7 +11,7 @@
 .CDdiv p{
     justify-content: center;
     vertical-align: auto;
-    font-size: 200px;
+    font-size: 175px;
     letter-spacing: 10px;
 }
 
@@ -20,4 +20,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.sessionOpts{
+    position: fixed;
+    top: 90%;
+    left: 55%;
+    transform: translate(-90%, -55%);
 }

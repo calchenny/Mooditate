@@ -10,6 +10,7 @@ function closeNav() {
 
 function onSignIn(googleUser){
   console.log(googleUser.getBasicProfile())
+  
   var profile = googleUser.getBasicProfile()
   console.log('User is ' + JSON.stringify(profile))
 
