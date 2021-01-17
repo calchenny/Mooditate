@@ -57,6 +57,11 @@
     top: -1px;
   }
 
+.button:hover {background-color: #357237}
+
+.mood{
+  height: 65px;
+}
 /*login page*/
   button[type=button] {
     text-align: center;
@@ -76,6 +81,7 @@
     font-family: dm-sans, sans-serif;
     font-weight: 700;
     background-image: none;
+    
 }
 
 #button {
