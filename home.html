@@ -111,7 +111,7 @@
     <div class="row justify-content-center">
       <div class="col-8">
         <div class="align-middle">
-          <h4>How are you feeling?</h4>
+          <h5>How are you feeling?</h5>
         </div>
       </div>
     </div>
@@ -131,28 +131,35 @@
 
     <div class="row justify-content-center">
       <div class="col-8">
-        <div class="align-middle">
-          <h4>What are you grateful for?</h4>
+        <div id="grateful" class="align-middle">
+          <h5>What are you grateful for?</h5>
         </div>
       </div>
     </div>
     <div class="row justify-content-center">
       <div class="col-8 justify-content-center">
-        <div class="input-group mb-3">
+        <div id="textBox" class="input-group mb-3">
           <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
         </div>
       </div>
     </div>
+
     <br>
     <div class="row justify-content-center">
       <div class="col-3 justify-content-center" href="meditate.html">
-        <a href="meditate.html">
-          <button style="background-color: #55839D;" type="button" class="btn btn-primary">Meditate</button>
-        </a>
+        <a href="meditate.html"><button style="background-color: #55839D;" type="button" class="btn btn-primary">Meditate</button></a>
+        <button onclick="userResponse();hideText();" style="background-color: #55839D;" type="button" class="btn btn-primary">Submit</button>
       </div>
-      <div class="col-3 justify-content-center">
-        <a href="home.html"><button onclick="userResponse()" style="background-color: #55839D;" type="button" class="btn btn-primary">Submit</button></a>
-      </div>
+
+      <script>
+        function hideText() {
+          var element1 = document.getElementById("grateful");
+          var element2 = document.getElementById("textBox");
+          element1.remove();
+          element2.remove();
+        }
+      </script>
+
     </div>
   </div>
 </div>
