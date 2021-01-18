@@ -18,9 +18,10 @@ h4{
   border: 2px solid white;
   border-radius: 10px;
   background-color: white;
-  height: 230px;
-  padding-left: 50px;
-  padding-right: 50px;
+  height: 270px;
+  width: 30%;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .row{
@@ -60,13 +61,6 @@ h4{
   font-size: 15px;
   border-color: #f2bcac;
   background-color: #f2bcac;
-}
-
-.meditateSelect option:hover{
-  background-color: #f7cfb9;
-
-}
-option:hover{
 }
 
 select option{
