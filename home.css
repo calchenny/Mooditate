@@ -46,6 +46,10 @@ body {
     color: #3d3838;
   }
 
+  .sidenav a:hover:after{
+    background-color: transparent;
+  }
+
   .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -75,10 +79,11 @@ body {
   .quote{
     padding-top: 10px;
     padding-bottom: 10px;
-    border-color: rgb(48, 146, 192);
-    border: 2px solid rgb(48, 146, 192);
+    border-color: white;
+    border: 2px solid white;
     border-radius: 10px;
-    background-color: rgb(48, 146, 192);
+    text-color: #55839D;
+    background-color: white;
   }
 
   .border1{
@@ -336,7 +341,7 @@ li:hover:nth-child(n+8):nth-child(-n+38), li:nth-child(29){
     color: WHITE;
 }
 
-.hours h2{
+.hours{
     color: WHITE;
     margin-left: 5vw;
     margin-right: 5vw;
