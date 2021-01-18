@@ -18,19 +18,11 @@
 
 <body style="background-color: #b7d9f1; font-family: 'Montserrat', sans-serif;">
     <script src="main.js"></script>
-      <!-- <div class="CDdiv">    
-        <span class="align-middle"></span>
-      </div> -->
-      <p id="testsound"></p>
 
 
       <div class="center d-flex justify-content-center align-items-center CDdiv">
           <p id="CDtime"></p>
         </div>
-      <audio autoplay="true">
-        <source src="ocean.wav" type="audio/ogg">
-      </audio>
-
       </div>
       <div class="justify-content-center align-items-center sessionOpts">
         <a href="end.html"><button style="background-color: #55839D;" type="radio" class="btn btn-primary">End Session</button></a>
@@ -39,7 +31,6 @@
 
     <script>
       var soundtrack = localStorage.getItem('backgroundSounds');
-      // document.getElementById('testsound').innerHTML = soundtrack;
         var sound;
         if (soundtrack == 1){
             sound = "rain.wav";
@@ -48,8 +39,8 @@
         } else if (soundtrack == 3){
             sound = "nature.wav";
         } else sound = "";
-      document.getElementById('testsound').innerHTML = sound;
-
+      
+      new Audio(sound).play();
       var CD = localStorage.getItem('startingCD');
       let time = CD * 60;
       const countdownEl = document.getElementById('CDtime');
