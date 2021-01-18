@@ -40,7 +40,7 @@
           <a style="padding: 40px 8px 8px 90px" href="calendar.html">Calendar</a>
         </div>
         <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
-  
+
       </div>
 
       <div class="col-1 justify-content-end">
@@ -69,11 +69,41 @@
       </div>
     </div>
   </div>
+
+  <div class="home-page">
+  <h2>Fun Fact:<h2>
+  </div>
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-8">
-        <div style="text-align: center" class="quote">
-          <h2>"Sea otters are cute but cows are better blah blah blah"</h2>
+        <div style="text-align: left; color:WHITE; font-size:2vw" class="quote">
+          <!--<h2>"Sea otters are cute but cows are better blah blah blah"</h2>-->
+          <b><h2 id="displayQuote">
+              <!--quote here-->
+          </h2></b>
+
+
+          <!--generates random positive fact-->
+          <!--sources: https://onekindplanet.org/animal/cow/-->
+          <!--sources: https://wp.wwu.edu/wordpresstam/2019/05/22/fun-facts-about-cows/-->
+          <!--sources: https://nationalzoo.si.edu/animals/cow-->
+          <script>
+            function newQuote() {
+                var quotes= [
+                    "Cows forms close friendships",
+                    "Cows like to be alone",
+                    "Cows spend ~10 hours relaxing and laying down",
+                    "Within an hour of their birth, cows are able to stand and walk"
+                ];
+
+                var randomNumber = Math.floor(Math.random() * (quotes.length));
+                document.write(quotes[randomNumber]);
+            }
+
+            document.addEventListener("load", newQuote());
+
+          </script>
+
         </div>
       </div>
     </div>
@@ -98,7 +128,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="row justify-content-center">
       <div class="col-8">
         <div class="align-middle">
