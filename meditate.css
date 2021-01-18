@@ -54,13 +54,20 @@ h4{
 
 }
 
-.meditateSelect{
+.meditateSelect, .soundSelect{
   padding: 10px;
   width: 200px;
   font-size: 15px;
   border-color: #f2bcac;
   background-color: #f2bcac;
-  
+}
+
+.meditateSelect option:hover{
+  background-color: #f7cfb9;
+
+}
+option:hover{
+}
 
 select option{
   font-size: 15px;
