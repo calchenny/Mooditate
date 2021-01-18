@@ -13,7 +13,6 @@
 
   <!--Website Icon-->
   <link rel="shortcut icon" type="image/png" href="moo.png"/>
-  
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -26,8 +25,9 @@
 </head>
 
 <body>
-<div class="index">
+<div class="container">
   <script src="main.js"></script>
+
   <br><br>
   <div class="container">
     <div class="row">
@@ -39,14 +39,21 @@
     </div>
   </div>
 <div class="row justify-content-center">
-  <a data-onsuccess="onSignIn">
+  <a id="welcome" data-onsuccess="onSignIn" onclick="turnOn()">
     <div align="center" class="g-signin2" data-width="260" data-height="50" data-longtitle="true" data-onsuccess="onSignIn"></div>
     <br>
     <a href="home.html">
-      <button style="background-color: #55839D;" type="button" class="btn btn-light">Hello&nbsp;<div id="content"></div></button>
+      <button style="background-color: #55839D; display:none;" type="button" class="btn btn-light">Hello&nbsp;<div id="content"></div></button>
     </a>
   </a>
 </div>
+
+<script>
+  function turnOn() {
+    document.getElementById("welcome").style.display = "inline";
+  }
+</script>
+
 
 <div class="row justify-content-center">
   <a href="index.html">
@@ -59,8 +66,5 @@
     <button style="background-color: #55839D;" type="button" class="btn btn-light">Guest</button>
   </a>
 </div>
-</div>
-<div class="rightSide">
-  
 </div>
 </body>

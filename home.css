@@ -392,12 +392,3 @@ li:hover:nth-child(n+8):nth-child(-n+38), li:nth-child(29){
     text-decoration: none;
   }
 
-  .index{
-    width:50%;
-    position: fixed;
-    margin-top: 10%;
-  }
-
-  .rightside{
-    background-image: url("waves.png");
-  }
