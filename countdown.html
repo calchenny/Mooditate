@@ -39,7 +39,7 @@
         } else if (soundtrack == 3){
             sound = "nature.wav";
         } else sound = "";
-      
+      sound.volume = 0.05;
       new Audio(sound).play();
       var CD = localStorage.getItem('startingCD');
       let time = CD * 60;

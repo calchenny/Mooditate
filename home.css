@@ -44,11 +44,9 @@ body {
 
   .sidenav a:hover {
     color: #3d3838;
+    text-decoration: none;
   }
 
-  .sidenav a:hover:after{
-    background-color: transparent;
-  }
 
   .sidenav .closebtn {
     position: absolute;
