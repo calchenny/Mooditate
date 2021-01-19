@@ -1,2 +1,3 @@
 # calchenny.github.io
-Meditation Website/App
+Cute Cow Themed Meditation Website
+#HackDavis 2021
